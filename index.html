@@ -1,0 +1,203 @@
+<!--whenever we want to use display:flex the element is gives to the div element because which are the tag are align in the flex they are enclosed with div elemnt.-->
+<!--The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.-->
+<!--the justify-content use only whenever we create a display flex then only we target the div to justify-content as space between the selected tag.-->
+<!--flex-grow is nothing but it deterrmines the how much spaces have th aig itemns with the specifiedd parent div-->
+<!--Flex-basis is a CSS property used in flexboxes that sets the initial size of a flex item before it grows or shrinks-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy</title>
+    <link rel="stylesheet" href="udemy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="navbar__left">
+            <h1 class="navbar__left__title">Udemy</h1>
+        </div>
+
+        <div class="navbar__center">
+            <i class="fa-solid fa-magnifying-glass" style="color: #050505;"></i>
+            <input class="navbar__center__search" "text" placeholder="search for anything">
+        </div>
+
+        <div class="navbar__right">
+            <p>Courses</p>
+            <p>My Learning</p>
+            <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+            <i class="fa-solid fa-user" style="color: #000000;"></i>
+            <i class="fa-solid fa-bell" style="color: #000000;"></i>
+        </div>
+    </div>
+<!--Categories-->
+    <div class="categories">
+        <button>Development</button>
+        <button>Business</button>
+        <button>IT software</button>
+        <button>Design</button>
+        <button>Marketing</button>
+        <button>Photography and video</button>
+    </div>
+
+    <!--Sale image-->
+    <div class="sale-image">
+        <img src="images/sales-image.jpg" alt="">
+    </div>
+
+    <!--Recommended for you-->
+    <div class="course">
+        <h1>Recommended for you</h1>
+        <p>Pick the best fit</p>
+        <div class="course__container">
+            <div class="course__list">
+                <img src="./images/c1.jpg" alt="">
+                <h3>2023 Python Data Visualization Masterclass</h3>
+                <p>Col Steele</p>
+                <p>4.8⭐⭐⭐</p>
+                <p>&#8360; :499 <del>1999</del></p>
+            </div>
+
+            <div class="course__list">
+                <img src="./images/c2.jpg" alt="">
+                <h3>UI/UX Development</h3>
+                <p>Daniel walter scoltt</p>
+                <p>4.9⭐⭐⭐⭐</p>
+                <p>&#8360; :699 <del>1999</del></p>
+            </div>
+
+            <div class="course__list">
+                <img src="./images/c3.jpg" alt="">
+                <h3>Web-Development</h3>
+                <p>Angela Yu</p>
+                <p>4.8⭐⭐⭐⭐</p>
+                <p>&#8360; :599 <del>1999</del></p>
+            </div>
+
+            <div class="course__list">
+                <img src="./images/c4.jpg" alt="">
+                <h3>Advance Java</h3>
+                <p>Navin Reddy</p>
+                <p>4.6⭐⭐⭐</p>
+                <p>&#8360; :499 <del>1999</del></p>
+            </div>
+        </div>
+        
+    </div>
+
+    <!--topics-->
+    <div class="topics">
+        <h1 class="topics__title">Topics Recommended for you</h1>
+        <div class="topics__container">
+            <p>Web Development</p>
+            <p>React JS</p>
+            <p>UI/UX</p>
+            <p>GitHub</p>
+            <p>Angular JS</p>
+            <p>JavaScript</p>
+            <p>Django</p>
+        </div>
+    </div>
+
+    <!--Popular-->
+    <div class="popular">
+        <h1 class="popular__title">Most Popular</h1>
+        <p class="popular__desc">Best fit for you</p>
+        <div class="popular__container">
+            <div class="course__list">
+                <img src="./images/c1.jpg" alt="">
+                <h3>2023 Python Data Visualization Masterclass</h3>
+                <p>Col Steele</p>
+                <p>4.8⭐⭐⭐</p>
+                <p>&#8360; :499 <del>1999</del></p>
+            </div>
+
+            <div class="course__list">
+                <img src="./images/c2.jpg" alt="">
+                <h3>UI/UX Development</h3>
+                <p>Daniel walter scoltt</p>
+                <p>4.9⭐⭐⭐⭐</p>
+                <p>&#8360; :699 <del>1999</del></p>
+            </div>
+
+            <div class="course__list">
+                <img src="./images/c3.jpg" alt="">
+                <h3>Web-Development</h3>
+                <p>Angela Yu</p>
+                <p>4.8⭐⭐⭐⭐</p>
+                <p>&#8360; :599 <del>1999</del></p>
+            </div>
+
+            <div class="course__list">
+                <img src="./images/c4.jpg" alt="">
+                <h3>Advance Java</h3>
+                <p>Navin Reddy</p>
+                <p>4.6⭐⭐⭐</p>
+                <p>&#8360; :499 <del>1999</del></p>
+            </div>
+
+            <div class="course__list">
+                <img src="./images/c2.jpg" alt="">
+                <h3>2023 Python Data Visualization Masterclass</h3>
+                <p>Col Steele</p>
+                <p>4.8⭐⭐⭐</p>
+                <p>&#8360; :499 <del>1999</del></p>
+            </div>
+
+            <div class="course__list">
+                <img src="./images/c1.jpg" alt="">
+                <h3>UI/UX Development</h3>
+                <p>Daniel walter scoltt</p>
+                <p>4.9⭐⭐⭐⭐</p>
+                <p>&#8360; :699 <del>1999</del></p>
+            </div>
+
+            <div class="course__list">
+                <img src="./images/c4.jpg" alt="">
+                <h3>Web-Development</h3>
+                <p>Angela Yu</p>
+                <p>4.8⭐⭐⭐⭐</p>
+                <p>&#8360; :599 <del>1999</del></p>
+            </div>
+
+            <div class="course__list">
+                <img src="./images/c3.jpg" alt="">
+                <h3>Advance Java</h3>
+                <p>Navin Reddy</p>
+                <p>4.6⭐⭐⭐</p>
+                <p>&#8360; :499 <del>1999</del></p>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="footer__one">
+            <div class="footer__one__s1">
+                <p>Udemy Bussiness</p>
+                <p>Teaach on Udemy</p>
+                <p>Get the app</p>
+                <p>About Us</p>
+                <p>Contact Us</p>
+            </div>
+
+            <div class="footer__section__s2">
+                <p>Career</p>
+                <p>Blog</p>
+                <p>Help&Support</p>
+                <p>Affiliate</p>
+                <p>Investors</p>
+            </div>
+        </div>
+        <div class="footer__two">
+            <h1>Udemy</h1>
+            <p>&copy; Udemy, Inc</p>
+        </div>
+    </div>
+</body>
+</html>

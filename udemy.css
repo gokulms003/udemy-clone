@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Gupter", serif;
+}
+
+.navbar{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid black 1px;
+}
+
+.navbar__left__title{
+    color: #A435F0;
+}
+
+.navbar__center{
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 30px;
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.navbar__center input{
+    border: none;
+    width: 60%;
+    font-size: 16px;
+}
+
+.navbar__center input:focus{
+    outline: none;
+}
+
+.navbar__right{
+    padding: 15px;
+    font-size: 16px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.categories{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid black 1px;
+}
+
+button{
+    background-color: #A435F0;
+    color: white;
+    margin:10px 30px 10px 30px;
+    padding: 10px;
+    border: 30px;
+    border-radius: 30px;
+    justify-content: space-around;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+.sale-image img{
+    width: 100%;
+}
+
+.course{
+    padding: 10px;
+}
+
+.course__container{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.course__list{
+    width: 300px;
+    /* the width percentae refers to size of the parent class to quarter of the child class */
+}
+
+.course__list img{
+    height: 50%;
+    width: 200px;
+}
+
+.topics__container p{
+    margin: 10px;
+    border: solid black 2px;
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 25%;
+}
+
+.topics__container{
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.popular{
+    padding: 10px;
+}
+
+.popular__container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer{
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+}
+
+.footer__one{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.footer__one p{
+    margin-top: 10px;
+}
+.footer__two{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
