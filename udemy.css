@@ -13,6 +13,10 @@ body{
     justify-content: space-between;
     align-items: center;
     border-bottom: solid black 1px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .navbar__left__title{
@@ -33,6 +37,7 @@ body{
     border: none;
     width: 60%;
     font-size: 16px;
+    background-color: transparent;
 }
 
 .navbar__center input:focus{
