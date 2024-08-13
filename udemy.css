@@ -52,6 +52,9 @@ body{
     align-items: center;
 }
 
+.navbar__bars{
+    display: none;
+}
 /* mylearning popup */
 .mylearning{
     position: relative;
@@ -172,7 +175,9 @@ button:hover{
 }
 
 .course__list{
-    width: 300px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
     /* the width percentae refers to size of the parent class to quarter of the child class */
 }
 
@@ -230,4 +235,46 @@ button:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media screen and (max-width:700px) {
+    body{
+        font-size: 12px;
+    }
+
+
+}
+
+@media screen and (max-width:600px) {
+    .course__list{
+        flex-basis: 40%;
+    }
+
+    button{
+        display: none;
+    }
+
+    .navbar__center ,.navbar__right{
+        display: none;
+    }
+
+    .navbar__bars{
+        display: block;
+    }
+
+    .sale-image{
+        position: relative;
+    }
+    
+    .sale-image__offer{
+        background-color: white;
+        color: black;
+        width: 180px;
+        border: solid 1px;
+        margin-left: 20px;
+        padding: 10px;
+        position: absolute;
+        top: 10px;
+        left: 0;
+    }
 }
